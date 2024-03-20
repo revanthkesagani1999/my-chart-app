@@ -1,0 +1,87 @@
+/* App.css */
+.container {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+.tabContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  padding: 10px 20px;
+  margin-right: 5px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover,
+.tabButtonActive {
+  background-color: #009688;
+  color: #ffffff;
+  border-color: #00796b;
+}
+
+.tabButtonActive {
+  background-color: #00897b;
+}
+
+.chartContainer {
+  width: 60%; /* Adjust chart size */
+  max-width: 600px; /* Maximum width */
+  margin: 30px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.data-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.data-table th, 
+.data-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #f4f4f4;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .chartContainer {
+    width: 80%; /* Larger percentage for smaller screens */
+  }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 480px) {
+  .tabButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
